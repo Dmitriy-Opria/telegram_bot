@@ -13,6 +13,7 @@ func main() {
 	defer logs.Recover()
 
 	bot, err := tgbotapi.NewBotAPI("key")
+	
 	if err != nil {
 		log.Panic(err)
 	}
